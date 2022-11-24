@@ -18,6 +18,7 @@ export default function Home(props: PageProps<Game[]>) {
       <Head>
         <title>Fresh App</title>
       </Head>
+          <h1 class="font-bold">Quixadá - Copa do Mundo</h1>
       <div class="p-4 mx-auto max-w-screen-md">
           {props.data.map(element => <div>
             <p class="my-4 text-center"><a href={"/games/" + element.id}><span>{element.home_team_en}</span> vs <span>{element.away_team_en}</span></a></p>
