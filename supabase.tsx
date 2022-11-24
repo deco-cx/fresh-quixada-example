@@ -1,6 +1,6 @@
 import { supabaseClient, supabaseTableItems } from "https://deno.land/x/supabase_deno@v1.0.5/mod.ts";
 
-const sbclient = new supabaseClient("https://xzqqlvndzjzyhdhfzxmx.supabase.co","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh6cXFsdm5kemp6eWhkaGZ6eG14Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY2NzkxNjEyMSwiZXhwIjoxOTgzNDkyMTIxfQ.Av2nbf3cOllLOerZWSKsiOIE6EVjtFFVOnriCbzBj88");
+const sbclient = new supabaseClient("https://xzqqlvndzjzyhdhfzxmx.supabase.co","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh6cXFsdm5kemp6eWhkaGZ6eG14Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2Njc5MTYxMjEsImV4cCI6MTk4MzQ5MjEyMX0.sCw6V51VhLnKWxPHFwcwpSMCvdD42KPbZ2kyEys73c8");
 
 export const addData = async (data: any) => {
     const sbTableItems = new supabaseTableItems(sbclient, "quixada");
